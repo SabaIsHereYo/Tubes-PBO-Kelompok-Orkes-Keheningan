@@ -11,12 +11,32 @@
 
 .card {
     -fx-background-color: #3B4252;
-    -fx-padding: 20;
+    -fx-padding: 16;
     -fx-background-radius: 12;
 }
 
+.clock-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #81A1C1;
+    -fx-letter-spacing: 1px;
+}
+
+.clock-display {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #88C0D0;
+}
+
+.timer-box {
+    -fx-background-color: #434C5E;
+    -fx-padding: 12;
+    -fx-background-radius: 8;
+    -fx-margin-top: 5;
+}
+
 .timer-display {
-    -fx-font-size: 56px;
+    -fx-font-size: 46px;
     -fx-font-weight: bold;
     -fx-text-fill: #ECEFF4;
 }
@@ -29,15 +49,34 @@
 
 .sound-label {
     -fx-text-fill: #E5E9F0;
-    -fx-font-size: 13px;
+    -fx-font-size: 12px;
     -fx-font-weight: bold;
+}
+
+.btn-small {
+    -fx-background-color: #4C566A;
+    -fx-text-fill: #ECEFF4;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 4 8;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.btn-small:hover {
+    -fx-background-color: #5E81AC;
+}
+
+.minute-spinner {
+    -fx-background-color: #3B4252;
+    -fx-text-fill: #ECEFF4;
 }
 
 .btn-primary {
     -fx-background-color: #A3BE8C;
     -fx-text-fill: #2E3440;
     -fx-font-weight: bold;
-    -fx-padding: 8 18;
+    -fx-padding: 6 16;
     -fx-background-radius: 6;
     -fx-cursor: hand;
 }
@@ -46,7 +85,7 @@
     -fx-background-color: #EBCB8B;
     -fx-text-fill: #2E3440;
     -fx-font-weight: bold;
-    -fx-padding: 8 18;
+    -fx-padding: 6 16;
     -fx-background-radius: 6;
     -fx-cursor: hand;
 }
@@ -55,7 +94,7 @@
     -fx-background-color: #BF616A;
     -fx-text-fill: #ECEFF4;
     -fx-font-weight: bold;
-    -fx-padding: 8 18;
+    -fx-padding: 6 16;
     -fx-background-radius: 6;
     -fx-cursor: hand;
 }
