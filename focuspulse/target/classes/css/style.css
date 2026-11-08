@@ -1,0 +1,61 @@
+.root {
+    -fx-background-color: #2E3440;
+}
+
+.app-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #88C0D0;
+    -fx-letter-spacing: 2px;
+}
+
+.card {
+    -fx-background-color: #3B4252;
+    -fx-padding: 20;
+    -fx-background-radius: 12;
+}
+
+.timer-display {
+    -fx-font-size: 56px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ECEFF4;
+}
+
+.section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #D8DEE9;
+}
+
+.sound-label {
+    -fx-text-fill: #E5E9F0;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.btn-primary {
+    -fx-background-color: #A3BE8C;
+    -fx-text-fill: #2E3440;
+    -fx-font-weight: bold;
+    -fx-padding: 8 18;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.btn-warning {
+    -fx-background-color: #EBCB8B;
+    -fx-text-fill: #2E3440;
+    -fx-font-weight: bold;
+    -fx-padding: 8 18;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.btn-danger {
+    -fx-background-color: #BF616A;
+    -fx-text-fill: #ECEFF4;
+    -fx-font-weight: bold;
+    -fx-padding: 8 18;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
