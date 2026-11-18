@@ -1,7 +1,6 @@
 package com.focuspulse;
 
 import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,9 +12,10 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/main.fxml"));
-        Scene scene = new Scene(root, 440, 580);
-        stage.setTitle("FocusPulse - Focus Dashboard & Sound Mixer");
-        stage.setResizable(false);
+        Scene scene = new Scene(root, 480, 730);
+        stage.setTitle("FocusPulse - Ambient Soundscape & Timer");
+        stage.setMinWidth(460);
+        stage.setMinHeight(690);
         stage.setScene(scene);
         stage.show();
     }

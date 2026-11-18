@@ -1,100 +1,341 @@
-.root {
-    -fx-background-color: #2E3440;
+/* =================================================================
+   FOCUSPULSE - TEMA GELAP (DEFAULT) & TEMA TERANG (.light-theme)
+   ================================================================= */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom right, #0D1117, #161B22, #1B263B);
 }
 
 .app-title {
-    -fx-font-size: 22px;
+    -fx-font-size: 18px;
     -fx-font-weight: bold;
-    -fx-text-fill: #88C0D0;
-    -fx-letter-spacing: 2px;
+    -fx-text-fill: #F8FAFC;
+    -fx-letter-spacing: 2.5px;
 }
 
-.card {
-    -fx-background-color: #3B4252;
-    -fx-padding: 16;
-    -fx-background-radius: 12;
-}
-
-.clock-title {
-    -fx-font-size: 11px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #81A1C1;
-    -fx-letter-spacing: 1px;
+.glass-panel {
+    -fx-background-color: rgba(20, 25, 35, 0.82);
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+    -fx-padding: 12 16;
 }
 
 .clock-display {
-    -fx-font-size: 26px;
+    -fx-font-size: 28px;
     -fx-font-weight: bold;
-    -fx-text-fill: #88C0D0;
+    -fx-text-fill: #38BDF8;
 }
 
-.timer-box {
-    -fx-background-color: #434C5E;
-    -fx-padding: 12;
-    -fx-background-radius: 8;
-    -fx-margin-top: 5;
-}
-
-.timer-display {
-    -fx-font-size: 46px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #ECEFF4;
+.date-display {
+    -fx-font-size: 12px;
+    -fx-text-fill: #CBD5E1;
 }
 
 .section-title {
-    -fx-font-size: 15px;
+    -fx-font-size: 13px;
     -fx-font-weight: bold;
-    -fx-text-fill: #D8DEE9;
+    -fx-text-fill: #E2E8F0;
+    -fx-letter-spacing: 1px;
+}
+
+.muted-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #94A3B8;
+}
+
+.timer-display {
+    -fx-font-size: 44px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* =================================================================
+   CUSTOM SPINNER TIMER (SUPAYA TIDAK PUTIH POLOS)
+   ================================================================= */
+.minute-spinner {
+    -fx-background-color: rgba(15, 23, 42, 0.9);
+    -fx-border-color: rgba(148, 163, 184, 0.35);
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+.minute-spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #F8FAFC;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-alignment: center;
+}
+.minute-spinner .increment-arrow-button,
+.minute-spinner .decrement-arrow-button {
+    -fx-background-color: rgba(51, 65, 85, 0.85);
+    -fx-cursor: hand;
+}
+.minute-spinner .increment-arrow-button:hover,
+.minute-spinner .decrement-arrow-button:hover {
+    -fx-background-color: #38BDF8;
+}
+.minute-spinner .increment-arrow,
+.minute-spinner .decrement-arrow {
+    -fx-background-color: #F8FAFC;
+}
+
+/* =================================================================
+   CHECKBOX
+   ================================================================= */
+.checkbox-group {
+    -fx-padding: 4 0 0 12;
+}
+
+.modern-checkbox {
+    -fx-text-fill: #E2E8F0;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+.modern-checkbox .box {
+    -fx-background-color: rgba(15, 23, 42, 0.9);
+    -fx-border-color: rgba(148, 163, 184, 0.5);
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+.modern-checkbox:selected .box {
+    -fx-background-color: #38BDF8;
+    -fx-border-color: #38BDF8;
+}
+.modern-checkbox:selected .mark {
+    -fx-background-color: #0F172A;
+}
+
+/* =================================================================
+   SCROLLPANE & CUSTOM SCROLLBAR (RAMPING & GELAP SESUAI TEMA)
+   ================================================================= */
+.mixer-scroll {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+.mixer-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+.mixer-scroll .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+.mixer-scroll .scroll-bar:vertical .track {
+    -fx-background-color: rgba(15, 23, 42, 0.45);
+    -fx-background-radius: 4;
+}
+.mixer-scroll .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(148, 163, 184, 0.45);
+    -fx-background-radius: 4;
+}
+.mixer-scroll .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #38BDF8;
+}
+.mixer-scroll .scroll-bar .increment-button,
+.mixer-scroll .scroll-bar .decrement-button {
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+    -fx-pref-width: 0;
+}
+.mixer-scroll .scroll-bar .increment-arrow,
+.mixer-scroll .scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+.mixer-row {
+    -fx-background-color: rgba(30, 41, 59, 0.65);
+    -fx-background-radius: 8;
+    -fx-padding: 6 10;
 }
 
 .sound-label {
-    -fx-text-fill: #E5E9F0;
+    -fx-text-fill: #F1F5F9;
     -fx-font-size: 12px;
     -fx-font-weight: bold;
 }
 
-.btn-small {
-    -fx-background-color: #4C566A;
-    -fx-text-fill: #ECEFF4;
-    -fx-font-size: 11px;
-    -fx-font-weight: bold;
-    -fx-padding: 4 8;
-    -fx-background-radius: 4;
+/* Slider Minimalis */
+.slider .track {
+    -fx-background-color: rgba(148, 163, 184, 0.3);
+    -fx-pref-height: 4px;
+    -fx-background-radius: 2;
+}
+.slider .thumb {
+    -fx-background-color: #38BDF8;
+    -fx-pref-width: 13px;
+    -fx-pref-height: 13px;
     -fx-cursor: hand;
 }
 
-.btn-small:hover {
-    -fx-background-color: #5E81AC;
+/* Tombol Ikon & Aksi */
+.btn-icon {
+    -fx-background-color: rgba(30, 41, 59, 0.85);
+    -fx-text-fill: #F8FAFC;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-min-width: 32px;
+    -fx-pref-width: 32px;
+    -fx-min-height: 28px;
+    -fx-padding: 2 6;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(255, 255, 255, 0.14);
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+}
+.btn-icon:hover {
+    -fx-background-color: #38BDF8;
+    -fx-text-fill: #0F172A;
 }
 
-.minute-spinner {
-    -fx-background-color: #3B4252;
-    -fx-text-fill: #ECEFF4;
+.btn-row-icon {
+    -fx-background-color: rgba(56, 189, 248, 0.2);
+    -fx-text-fill: #38BDF8;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 2 7;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+.btn-row-icon:hover {
+    -fx-background-color: #38BDF8;
+    -fx-text-fill: #0F172A;
+}
+
+.btn-row-delete {
+    -fx-background-color: rgba(244, 63, 94, 0.2);
+    -fx-text-fill: #FDA4AF;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 2 7;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+.btn-row-delete:hover {
+    -fx-background-color: #F43F5E;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btn-chip {
+    -fx-background-color: rgba(51, 65, 85, 0.85);
+    -fx-text-fill: #E2E8F0;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 4 9;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.btn-chip:hover {
+    -fx-background-color: #38BDF8;
+    -fx-text-fill: #0F172A;
 }
 
 .btn-primary {
-    -fx-background-color: #A3BE8C;
-    -fx-text-fill: #2E3440;
+    -fx-background-color: #38BDF8;
+    -fx-text-fill: #0F172A;
     -fx-font-weight: bold;
-    -fx-padding: 6 16;
-    -fx-background-radius: 6;
+    -fx-padding: 6 18;
+    -fx-background-radius: 8;
     -fx-cursor: hand;
+}
+.btn-primary:hover {
+    -fx-background-color: #7DD3FC;
 }
 
 .btn-warning {
-    -fx-background-color: #EBCB8B;
-    -fx-text-fill: #2E3440;
+    -fx-background-color: #FBBF24;
+    -fx-text-fill: #0F172A;
     -fx-font-weight: bold;
-    -fx-padding: 6 16;
-    -fx-background-radius: 6;
+    -fx-padding: 6 18;
+    -fx-background-radius: 8;
     -fx-cursor: hand;
 }
 
 .btn-danger {
-    -fx-background-color: #BF616A;
-    -fx-text-fill: #ECEFF4;
+    -fx-background-color: #F87171;
+    -fx-text-fill: #0F172A;
     -fx-font-weight: bold;
-    -fx-padding: 6 16;
-    -fx-background-radius: 6;
+    -fx-padding: 6 18;
+    -fx-background-radius: 8;
     -fx-cursor: hand;
+}
+
+/* =================================================================
+   MODE TEMA TERANG (.light-theme)
+   ================================================================= */
+.root-pane.light-theme {
+    -fx-background-color: linear-gradient(to bottom right, #E0F2FE, #F8FAFC, #E2E8F0);
+}
+.root-pane.light-theme .app-title {
+    -fx-text-fill: #0F172A;
+}
+.root-pane.light-theme .glass-panel {
+    -fx-background-color: rgba(255, 255, 255, 0.84);
+    -fx-border-color: rgba(15, 23, 42, 0.12);
+}
+.root-pane.light-theme .clock-display {
+    -fx-text-fill: #0284C7;
+}
+.root-pane.light-theme .date-display {
+    -fx-text-fill: #475569;
+}
+.root-pane.light-theme .section-title {
+    -fx-text-fill: #1E293B;
+}
+.root-pane.light-theme .muted-label {
+    -fx-text-fill: #64748B;
+}
+.root-pane.light-theme .timer-display {
+    -fx-text-fill: #0F172A;
+}
+.root-pane.light-theme .modern-checkbox {
+    -fx-text-fill: #1E293B;
+}
+.root-pane.light-theme .modern-checkbox .box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #94A3B8;
+}
+.root-pane.light-theme .mixer-row {
+    -fx-background-color: rgba(241, 245, 249, 0.88);
+}
+.root-pane.light-theme .sound-label {
+    -fx-text-fill: #1E293B;
+}
+.root-pane.light-theme .btn-icon {
+    -fx-background-color: rgba(255, 255, 255, 0.88);
+    -fx-text-fill: #0F172A;
+    -fx-border-color: rgba(15, 23, 42, 0.15);
+}
+.root-pane.light-theme .btn-icon:hover {
+    -fx-background-color: #0284C7;
+    -fx-text-fill: #FFFFFF;
+}
+.root-pane.light-theme .btn-chip {
+    -fx-background-color: #E2E8F0;
+    -fx-text-fill: #1E293B;
+}
+.root-pane.light-theme .btn-chip:hover {
+    -fx-background-color: #0284C7;
+    -fx-text-fill: #FFFFFF;
+}
+.root-pane.light-theme .minute-spinner {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CBD5E1;
+}
+.root-pane.light-theme .minute-spinner .text-field {
+    -fx-text-fill: #0F172A;
+}
+.root-pane.light-theme .minute-spinner .increment-arrow-button,
+.root-pane.light-theme .minute-spinner .decrement-arrow-button {
+    -fx-background-color: #E2E8F0;
+}
+.root-pane.light-theme .minute-spinner .increment-arrow,
+.root-pane.light-theme .minute-spinner .decrement-arrow {
+    -fx-background-color: #0F172A;
+}
+.root-pane.light-theme .mixer-scroll .scroll-bar:vertical .track {
+    -fx-background-color: rgba(203, 213, 225, 0.5);
+}
+.root-pane.light-theme .mixer-scroll .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(100, 116, 139, 0.5);
 }

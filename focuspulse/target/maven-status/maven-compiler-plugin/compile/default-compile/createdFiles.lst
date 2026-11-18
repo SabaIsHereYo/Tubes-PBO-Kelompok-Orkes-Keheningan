@@ -1,4 +1,5 @@
 com\focuspulse\controllers\MainController.class
 com\focuspulse\Main.class
 module-info.class
+com\focuspulse\models\SoundChannel.class
 com\focuspulse\App.class

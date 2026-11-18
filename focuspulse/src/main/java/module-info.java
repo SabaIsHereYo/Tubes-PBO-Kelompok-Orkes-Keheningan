@@ -1,4 +1,5 @@
 module com.focuspulse {
+    requires java.desktop;
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.media;
@@ -6,4 +7,5 @@ module com.focuspulse {
     opens com.focuspulse to javafx.fxml;
     opens com.focuspulse.controllers to javafx.fxml;
     exports com.focuspulse;
+    exports com.focuspulse.models;
 }
